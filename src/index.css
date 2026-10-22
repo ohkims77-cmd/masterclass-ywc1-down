@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    background-color: #0b0f19;
+    color: #f3f4f6;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom 3D Lotto Ball lighting & gradients */
+.lotto-ball-1-10 {
+  background: radial-gradient(circle at 35% 35%, #fff3b0 0%, #facc15 35%, #eab308 70%, #a16207 100%);
+  box-shadow: inset -3px -3px 8px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(234, 179, 8, 0.35);
+  color: #1a1a1a;
+}
+
+.lotto-ball-11-20 {
+  background: radial-gradient(circle at 35% 35%, #bae6fd 0%, #38bdf8 35%, #0284c7 70%, #0369a1 100%);
+  box-shadow: inset -3px -3px 8px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(14, 165, 233, 0.35);
+  color: #ffffff;
+}
+
+.lotto-ball-21-30 {
+  background: radial-gradient(circle at 35% 35%, #fecdd3 0%, #fb7185 35%, #e11d48 70%, #9f1239 100%);
+  box-shadow: inset -3px -3px 8px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(225, 29, 72, 0.35);
+  color: #ffffff;
+}
+
+.lotto-ball-31-40 {
+  background: radial-gradient(circle at 35% 35%, #e2e8f0 0%, #94a3b8 35%, #64748b 70%, #334155 100%);
+  box-shadow: inset -3px -3px 8px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(100, 116, 139, 0.35);
+  color: #ffffff;
+}
+
+.lotto-ball-41-45 {
+  background: radial-gradient(circle at 35% 35%, #d9f99d 0%, #84cc16 35%, #65a30d 70%, #3f6212 100%);
+  box-shadow: inset -3px -3px 8px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(132, 204, 22, 0.35);
+  color: #ffffff;
+}
+
+.bonus-ring {
+  box-shadow: 0 0 0 3px #f59e0b, 0 0 15px rgba(245, 158, 11, 0.6);
+}
+
+/* Glassmorphism & Card styles */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.08);
+}
+
+/* Korean Lotto Ticket paper styling */
+.receipt-paper {
+  background: #fdfcf7;
+  color: #1f2937;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+  background-image: radial-gradient(#e5e7eb 0.75px, transparent 0.75px);
+  background-size: 8px 8px;
+}
+
+.receipt-zigzag {
+  background: linear-gradient(135deg, transparent 5px, #fdfcf7 0) top left,
+              linear-gradient(-135deg, transparent 5px, #fdfcf7 0) top right;
+  background-size: 10px 10px;
+  background-repeat: repeat-x;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+@keyframes floatBall {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(15deg); }
+}
+
+.animate-float-ball {
+  animation: floatBall 3s ease-in-out infinite;
+}

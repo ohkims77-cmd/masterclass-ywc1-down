@@ -1,0 +1,6 @@
+{
+  "name": "로또 6/45 행운 추첨기",
+  "description": "실감나는 볼 회전 추첨 시뮬레이터, 5게임 영수증 발권, 조건별 필터링, 꿈해몽 운세 번호, 통계 분석까지 완비된 로또 추첨기",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
